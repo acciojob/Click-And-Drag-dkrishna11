@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="items">
+  <div class="items" onmouseup="mouseUp()">
     <div class="item item1">01</div>
     <div class="item item2">02</div>
     <div class="item item3">03</div>
@@ -36,6 +36,15 @@
 
 <script>
 //Your code goes here 
+	// let item=document.getElementByClassName("items")[0];
+
+	// item.addEventListener("mouseup", ()=>{
+	// 	item.scrollLeft >0;
+	// })
+
+	function mouseUp() {
+  document.getElementByClassName("items")[0].scrollLeft > 0;
+}
 </script>
 
   </body>
